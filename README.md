@@ -2,11 +2,11 @@
 
 CORSIA – the UN-brokered "Carbon Offsetting and Reduction Scheme for International Aviation" went into effect at the start of 2021. This DW analysis shows that the deal will not require airlines to offset flight emissions for another six years and will cost them less than 1% of operating costs by 2035.
 
-Starting in 2021, airlines will have to offset any emissions beyond 2019 levels on routes between two states that participate in CORSIA. The deal is supposed to support airlines&#39; global goal to achieve &quot;carbon-neutral growth&quot;. This analysis explores how this idea works in practice: What share of emissions is covered under CORSIA, how much will actually have to be offset over the duration of the program, and how much airlines will have to pay for those offsets.
+Starting in 2021, airlines will have to offset any emissions beyond 2019 levels on routes between states participating in CORSIA. The deal is supposed to support airlines' global goal to achieve "carbon-neutral growth". This analysis explores how this idea works in practice: What share of emissions is covered under CORSIA, how much will actually have to be offset over the duration of the program, and how much airlines will have to pay for those offsets.
 
 _In this repository, you will find the methodology, data and code behind the stories that came out of this analysis._
 
-**Read the full story:** [English](https://p.dw.com/p/3kXLJ)
+**Read the full story:** [English](https://dw.com/a-56309438)
 
 **Data analysis by:** [Kira Schacht](https://twitter.com/daten_drang)
 
@@ -32,21 +32,21 @@ For a detailed list of data sources used, also refer to the Excel file mentioned
 
 # Analysis
 
-The main part of this analysis is based a [database](https://theicct.org/publications/co2-emissions-commercial-aviation-2020) compiled by the International Council on Clean Transportation (ICCT). Researchers Brandon Graver, Dan Rutherford and Sola Zheng used public data sources, as well as a self-developed "Global Carbon Assessment Model", to estimate fuel burn and emissions from global aviation by, for example, route, seating class or aircraft type.
+The main part of this analysis is based on a [database](https://theicct.org/publications/co2-emissions-commercial-aviation-2020) compiled by the International Council on Clean Transportation (ICCT). Researchers Brandon Graver, Dan Rutherford and Sola Zheng used public data sources, as well as a self-developed "Global Carbon Assessment Model", to estimate fuel burn and emissions from global aviation by route, seating class, aircraft type and other variables.
 
 For more general information, please also refer to the [FAQ](https://www.icao.int/environmental-protection/CORSIA/Pages/CORSIA-FAQs.aspx) on the [CORSIA page](https://www.icao.int/environmental-protection/CORSIA/Pages/default.aspx) of the International Civil Aviation Organization (ICAO).
 
 ## CORSIA coverage
 
-CORSIA covers international routes between participating states. In general, participation is mandatory for all ICAO member states from 2027. Some states are exempt, though:
+CORSIA covers international routes between participating states. In general, participation is mandatory for all ICAO member states starting in 2027. Some states are exempt:
 
 - States whose individual share of international aviation activities in year 2018 is below 0.5 per cent
 - States that are not part of the list of States that account for 90 per cent of total aviation activity when sorted from the highest to the lowest
-- Least Developed Countries (LDCs); Small Island Developing States (SIDS); and Landlocked Developing Countries (LLDCs)
+- Least Developed Countries (LDCs), Small Island Developing States (SIDS) and Landlocked Developing Countries (LLDCs)
 
-From 2021 to 2026, the scheme is entirely voluntary, so any country can participate.
+From 2021 to 2026, the scheme is voluntary. Any country, including exempt countries, can opt in during that time.
 
-For a full list of participating states in the voluntary and mandatory phases, please refer to the linked Excel file.
+For a full list of participating states in the voluntary and mandatory phases, please refer to the linked data file.
 
 ![](graphics/204_en_corsia_map.png)
 
@@ -79,9 +79,9 @@ Baselines are higher during the mandatory phase because some big polluters – C
 
 ## Emissions forecast
 
-To find out how much airlines will actually have to offset under CORSIA, it&#39;s necessary to estimate how much airlines will emit during the course of the program.
+To find out how much airlines will actually have to offset under CORSIA, it is necessary to estimate how much airlines will emit during the course of the program.
 
-ICCT&#39;s Dan Rutherford provided DW with his emissions forecasts in January 2021, based on the latest industry projections. His projections make the following assumptions:
+ICCT's Dan Rutherford provided DW with emissions forecasts based on the latest industry projections in January 2021. His projections rely on the following assumptions:
 
 | **Value** | **Variable** | **Source** |
 | --- | --- | --- |
@@ -105,7 +105,7 @@ We calculated the yearly volume of offsets for both the original baseline (2019-
 
 The cost of these offsets depends heavily on the price of CORSIA-eligible carbon credits.
 
-After speaking to experts from ICCT and Ecosystem Marketplace and reviewing data on 2019 voluntary carbon credit prices (between USD 1,63 and 5,27), current CORSIA credit prices (ca. USD 0.85) and projections by ICAO and ICCT, we decided to use ICCT's 2017 price projections, which are as follows:
+After speaking to experts from ICCT and [Ecosystem Marketplace](https://www.ecosystemmarketplace.com/carbon-markets/) and reviewing data on 2019 voluntary carbon credit prices (between USD 1,63 and 5,27), current CORSIA credit prices (ca. USD 0.9) and projections by ICAO and ICCT, we decided to use ICCT's 2017 price projections, which are as follows:
 
 *(unit: USD/tCO2)*
 
@@ -116,9 +116,9 @@ After speaking to experts from ICCT and Ecosystem Marketplace and reviewing data
 | 2030 | 10 | 6,98 | 0,58 |
 | 2035 | 12 | 8,49 | 0,70 |
 
-The bases for the 3 scenarios cited above are detailed in ICCT&#39;s [CORSIA Policy Update](https://theicct.org/sites/default/files/publications/ICAO%20MBM_Policy-Update_13022017_vF.pdf):
+The bases for the 3 scenarios cited above are detailed in ICCT's [CORSIA Policy Update](https://theicct.org/sites/default/files/publications/ICAO%20MBM_Policy-Update_13022017_vF.pdf):
 
-- **High:** IATA / ICAO&#39;s low estimate based on EU Emissions Trading System credit prices
+- **High:** IATA / ICAO's low estimate based on EU Emissions Trading System credit prices
 - **Middle:** EU ETS 2016 average prices, plus a 4% annual price increase
 - **Low:** Certified Emissions Reduction (credits from the Clean Development Mechanism) 2016 average prices, plus a 4% annual price increase
 
@@ -128,9 +128,9 @@ The prices for all combinations of price scenario, traffic recovery scenario and
 
 ## Offset costs as share of operating costs
 
-As the last step of the analysis, we put these yearly costs into context using the total sum of industry expenses according to IATA:
+As a last step, we put these yearly costs in relation to the total sum of 2019 industry expenses according to IATA:
 
-` Cost(Offsets)_year / Expenses_year`
+` Cost(Offsets)_year / Expenses_2019`
 
 ![](graphics/207_en_corsia_costs.png)
 
